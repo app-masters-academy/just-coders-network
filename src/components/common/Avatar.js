@@ -5,7 +5,7 @@ class Avatar extends Component {
     render() {
         return (
             <div>
-                <img style={avatarStyles} src={this.props.image}/>
+                <img style={avatarStyles.image} src={this.props.image}/>
                 <p style={{color: colors.appBlue}}>{this.props.name}</p>
                 <small style={{color: colors.appBlue}}>{this.props.time}</small>
             </div>
@@ -14,10 +14,12 @@ class Avatar extends Component {
 }
 
 const avatarStyles = {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
-    objectFit: 'cover'
+    image: {
+        width: 40,
+        height: 40,
+        borderRadius: 20,
+        objectFit: 'cover'
+    }    
 }
 
 export default Avatar;
