@@ -29,7 +29,8 @@ let boxWhite = styles.box;
 
 boxWhite.backgroundColor = 'white';
 
-console.log(boxWhite);
+console.log(styles.box);
+console.log({...styles.box, backgroundColor: 'white'});
 
 class App extends Component {
     render() {
