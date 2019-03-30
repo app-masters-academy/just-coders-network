@@ -11,7 +11,7 @@ class App extends Component {
                     <h3>Postar agora</h3>
                     <input/>
                     <button>
-
+                        Enviar
                     </button>
                 </div>
                 <div>
