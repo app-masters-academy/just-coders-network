@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class Avatar extends Component {
     render(){
         return (
-            <img styles={avatarStyles} src={this.props.image} />
+            <img style={avatarStyles} src={this.props.image} />
         )
     }
 }
