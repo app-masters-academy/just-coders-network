@@ -89,5 +89,5 @@ class App extends Component {
     }
 }
 
-
+export {styles};
 export default App;
