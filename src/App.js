@@ -11,10 +11,10 @@ class App extends Component {
                 <div style={{
                     marginTop: 15,
                     padding: 20,
-                    backgroundColor: 'lightgray',
+                    backgroundColor: '#D8D8D8',
                     border: '1px solid gray'
                 }}>
-                    <h3 style={{color: 'blue'}}>
+                    <h3 style={{color: '#4990E2'}}>
                         Postar agora
                     </h3>
                     <input style={{width: '100%'}}/>
