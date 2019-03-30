@@ -7,3 +7,5 @@ class Avatar extends Component {
         )
     }
 }
+
+export default Avatar;
