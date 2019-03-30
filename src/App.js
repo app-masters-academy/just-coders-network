@@ -22,7 +22,6 @@ const styles = {
 
 class App extends Component {
     render() {
-        console.log(styles);
         return (
             <div>
                 <div className="Header">
