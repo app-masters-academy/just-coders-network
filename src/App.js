@@ -32,7 +32,12 @@ class App extends Component {
                         Enviar
                     </button>
                 </div>
-                <div>
+                <div style={{
+                    marginTop: 15,
+                    padding: 20,
+                    backgroundColor: appGray,
+                    border: '1px solid gray'
+                }}>
                     <p>Linus Torvalds</p>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis massa magna, eget
