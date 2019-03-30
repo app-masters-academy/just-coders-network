@@ -67,7 +67,7 @@ class App extends Component {
                         </p>
                     </div>
                     <div>
-                        <p>Karla</p>
+                        <p style={{color: appBlue}}>Karla</p>
                         <div style={{...styles.box, backgroundColor: 'white', padding: 5}}>
                             <p>Nulla facilisi. Curabitur tincidunt odio eu facilisis convallis. Maecenas commodo et
                                 dolor ac
@@ -75,7 +75,7 @@ class App extends Component {
                         </div>
                     </div>
                     <div>
-                        <p>Jonny</p>
+                        <p style={{color: appBlue}}>Jonny</p>
                         <div style={{...styles.box, backgroundColor: 'white', padding: 5}}>
                             <p>Nulla facilisi. Curabitur tincidunt odio eu facilisis convallis. Maecenas commodo et
                                 dolor ac
