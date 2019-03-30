@@ -7,6 +7,9 @@ class App extends Component {
         <div>
           <h1>Just coders Network</h1>
         </div>
+        <div>
+          <h3>Postar agora</h3>
+        </div>
       </div>
     );
   }
