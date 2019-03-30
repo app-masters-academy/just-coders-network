@@ -17,7 +17,7 @@ class App extends Component {
                     <h3 style={{color: 'blue'}}>
                         Postar agora
                     </h3>
-                    <input/>
+                    <input />
                     <button>
                         Enviar
                     </button>
