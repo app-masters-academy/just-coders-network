@@ -9,6 +9,7 @@ class App extends Component {
                     <h1>Just coders Network</h1>
                 </div>
                 <div style={{
+                    padding: 20,
                     border: '1px solid gray'
                 }}>
                     <h3>Postar agora</h3>
