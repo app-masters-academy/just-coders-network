@@ -4,7 +4,7 @@ import {colors} from '../../styles/styles';
 class Avatar extends Component {
     render() {
         return (
-            <div>
+            <div style={avatarStyles.container}>
                 <img style={avatarStyles.image} src={this.props.image}/>
                 <p style={{color: colors.appBlue}}>{this.props.name}</p>
                 <small style={{color: colors.appBlue}}>{this.props.time}</small>
