@@ -4,7 +4,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        Nossa rede social
+        <div>
+          <h1></h1>
+        </div>
       </div>
     );
   }
