@@ -3,6 +3,7 @@ import Avatar from '../common/Avatar';
 import {styles, colors} from '../../styles/styles';
 
 const Post = (props) => {
+    console.log('Post props', props);
     return (
         <div style={styles.grayBox}>
             <Avatar image={props.user_image}/>
