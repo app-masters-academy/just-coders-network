@@ -11,7 +11,7 @@ const styles = {
         backgroundColor: appGray,
         border: '1px solid gray'
     }
-}
+};
 
 class App extends Component {
     render() {
