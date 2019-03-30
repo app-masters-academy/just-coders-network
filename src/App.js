@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Header from './components/Header';
+import Header from './components/Header.js';
 
 const appGray = '#EFEFEF';
 const appBlue = '#4990E2';
