@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
 
+const appGray = '#D8D8D8';
+
 class App extends Component {
     render() {
         return (
@@ -11,7 +13,7 @@ class App extends Component {
                 <div style={{
                     marginTop: 15,
                     padding: 20,
-                    backgroundColor: '#D8D8D8',
+                    backgroundColor: appGray,
                     border: '1px solid gray'
                 }}>
                     <h3 style={{color: '#4990E2'}}>
