@@ -5,7 +5,7 @@ import {styles, colors} from '../../styles/styles';
 const Post = (props) => {
     return (
         <div style={styles.grayBox}>
-            <img src={props.user_image} />
+            <Avatar />
             <p style={{color: colors.appBlue}}>{props.user_name}</p>
 
             <p style={{color: colors.appBlue}}>{props.created_at}</p>
