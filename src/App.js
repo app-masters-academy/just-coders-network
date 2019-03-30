@@ -19,7 +19,6 @@ class App extends Component {
                     user_image="https://thenypost.files.wordpress.com/2018/05/180516-woman-mauled-by-angry-wiener-dogs-feature.jpg?quality=90&strip=all&w=618&h=410&crop=1"
                     created_at="Hoje às 17:33"
                     content="Melhor rede social de todas, estou muito feliz!"/>
-                <Post/>
             </div>
         );
     }
