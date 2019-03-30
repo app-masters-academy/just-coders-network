@@ -27,6 +27,4 @@ const styles = {
     }
 };
 
-
-
 export {styles, colors};
