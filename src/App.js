@@ -9,6 +9,7 @@ class App extends Component {
             <div>
                 <Header />
                 <PostForm />
+                <PostForm />
                 <div style={styles.grayBox}>
                     <p style={{color: colors.appBlue}}>Linus Torvalds</p>
                     <p style={{color: colors.appBlue}}>Ontém às 19:35</p>
