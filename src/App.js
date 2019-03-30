@@ -30,9 +30,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <div className="Header">
-                    <h1>Just coders Network</h1>
-                </div>
+
                 <div style={styles.grayBox}>
                     <h3 style={{color: appBlue}}>
                         Postar agora
