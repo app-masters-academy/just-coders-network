@@ -27,7 +27,7 @@ class App extends Component {
                 <div className="Header">
                     <h1>Just coders Network</h1>
                 </div>
-                <div style={styles.grayBox}>
+                <div style={}>
                     <h3 style={{color: appBlue}}>
                         Postar agora
                     </h3>
