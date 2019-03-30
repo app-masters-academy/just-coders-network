@@ -1,8 +1,6 @@
 .Header {
   text-align: center;
-  border-color: gray;
-  border-width: 1px;
   background-color: silver;
   padding: 15px;
-  border-style: solid;
+  border: 1px solid gray;
 }
