@@ -36,6 +36,7 @@ class App extends Component {
                         <p>Nulla facilisi. Curabitur tincidunt odio eu facilisis convallis. Maecenas commodo et dolor ac
                             blandit. Proin tincidunt mauris odio, vel blandit mauris finibus sit amet.</p>
                     </div>
+                    
                 </div>
             </div>
         );
