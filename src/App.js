@@ -14,7 +14,7 @@ class App extends Component {
                     backgroundColor: 'lightgray',
                     border: '1px solid gray'
                 }}>
-                    <h3 style={{color: 'skyblue'}}>
+                    <h3 style={{color: 'blue'}}>
                         Postar agora
                     </h3>
                     <input/>
