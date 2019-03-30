@@ -4,6 +4,15 @@ import './App.css';
 const appGray = '#D8D8D8';
 const appBlue = '#4990E2';
 
+const styles = {
+    grayBox: {
+        marginTop: 15,
+        padding: 20,
+        backgroundColor: appGray,
+        border: '1px solid gray'
+    }
+}
+
 class App extends Component {
     render() {
         return (
@@ -11,12 +20,7 @@ class App extends Component {
                 <div className="Header">
                     <h1>Just coders Network</h1>
                 </div>
-                <div style={{
-                    marginTop: 15,
-                    padding: 20,
-                    backgroundColor: appGray,
-                    border: '1px solid gray'
-                }}>
+                <div style={styles.grayBox}>
                     <h3 style={{color: appBlue}}>
                         Postar agora
                     </h3>
@@ -32,12 +36,7 @@ class App extends Component {
                         Enviar
                     </button>
                 </div>
-                <div style={{
-                    marginTop: 15,
-                    padding: 20,
-                    backgroundColor: appGray,
-                    border: '1px solid gray'
-                }}>
+                <div style={}>
                     <p>Linus Torvalds</p>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis massa magna, eget
@@ -89,5 +88,6 @@ class App extends Component {
         );
     }
 }
+
 
 export default App;
