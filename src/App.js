@@ -10,6 +10,8 @@ class App extends Component {
                 <Header />
                 <PostForm />
                 <Post
+                    user_name="Baraky"
+                    created_at="Ontem às 19:35"
                     content="Primeiro post nessa rede social muito legal"/>
                 <Post />
                 <Post />
