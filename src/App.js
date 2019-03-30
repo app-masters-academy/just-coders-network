@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 
-const appGray = '#D8D8D8';
+const appGray = '#EFEFEF';
 const appBlue = '#4990E2';
 
 const styles = {
