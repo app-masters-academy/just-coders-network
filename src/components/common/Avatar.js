@@ -9,8 +9,8 @@ class Avatar extends Component {
 }
 
 const avatarStyles = {
-    width: 20,
-    height: 20,
+    width: 40,
+    height: 40,
     borderRadius: 20
 }
 
