@@ -7,7 +7,7 @@ class Avatar extends Component {
             <div style={avatarStyles.container}>
                 <img style={avatarStyles.image} src={this.props.image}/>
                 <div>
-                    <p style={{color: colors.appBlue, margin: 4}}>{this.props.name}</p>
+                    <p style={{color: colors.appBlue, margin: 0}}>{this.props.name}</p>
                     <small style={{color: colors.appBlue}}>{this.props.time}</small>
                 </div>
             </div>
