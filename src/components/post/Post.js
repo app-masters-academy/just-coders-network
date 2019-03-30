@@ -2,7 +2,6 @@ import React from 'react';
 import {styles, colors} from '../../styles/styles';
 
 const Post = (props) => {
-    props
     return (
         <div style={styles.grayBox}>
             <p style={{color: colors.appBlue}}>Linus Torvalds</p>
