@@ -8,7 +8,7 @@ class App extends Component {
                 <div className="Header">
                     <h1>Just coders Network</h1>
                 </div>
-                <div>
+                <div style={{textAlign: 'center'}}>
                     <h3>Postar agora</h3>
                     <input/>
                     <button>
