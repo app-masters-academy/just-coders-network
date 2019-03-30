@@ -6,7 +6,7 @@ import Post from './components/post/Post';
 class App extends Component {
     render() {
         return (
-            <div>
+            <div style={{padding: 20}}>
                 <Header/>
                 <PostForm/>
                 <Post
