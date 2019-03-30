@@ -10,6 +10,13 @@ const styles = {
         padding: 20,
         backgroundColor: appGray,
         border: '1px solid gray'
+    },
+    blueButton: {
+        marginTop: 10,
+        borderWidth: 0,
+        backgroundColor: appBlue,
+        color: 'white',
+        padding: 10
     }
 };
 
