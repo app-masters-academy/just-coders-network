@@ -13,6 +13,6 @@ const PostForm = () => {
             </button>
         </div>
     )
-}
+};
 
 export default PostForm;

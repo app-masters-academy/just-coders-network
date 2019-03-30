@@ -1,4 +1,4 @@
-const appGray = '#D8D8D8';
+const appGray = '#EFEFEF';
 const appBlue = '#4990E2';
 
 const styles = {
@@ -7,6 +7,18 @@ const styles = {
         padding: 20,
         backgroundColor: appGray,
         border: '1px solid gray'
+    },
+    box: {
+        marginTop: 15,
+        padding: 20,
+        border: '1px solid gray'
+    },
+    blueButton: {
+        marginTop: 10,
+        borderWidth: 0,
+        backgroundColor: appBlue,
+        color: 'white',
+        padding: 10
     }
 };
 
