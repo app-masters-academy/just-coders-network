@@ -23,6 +23,7 @@ class App extends Component {
                     <input style={{width: '100%'}}/>
                     <button
                         style={{
+                            marginTop: 10,
                             borderWidth: 0,
                             backgroundColor: appBlue,
                             color: 'white',
