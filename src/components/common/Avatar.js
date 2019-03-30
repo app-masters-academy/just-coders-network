@@ -6,9 +6,8 @@ class Avatar extends Component {
         return (
             <div>
             <img style={avatarStyles} src={this.props.image} />
-                <p style={{color: colors.appBlue}}>{props.user_name}</p>
-
-                <p style={{color: colors.appBlue}}>{props.created_at}</p>
+                <p style={{color: colors.appBlue}}>{this.props.name}</p>
+                <p style={{color: colors.appBlue}}>{this.props.time}</p>
             </div>
         )
     }
