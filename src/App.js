@@ -11,6 +11,7 @@ class App extends Component {
                 <PostForm />
                 <Post
                     user_name="Baraky"
+                    user_image=""
                     created_at="Ontem às 19:35"
                     content="Primeiro post nessa rede social muito legal"/>
                 <Post />
