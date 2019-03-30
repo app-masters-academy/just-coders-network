@@ -27,4 +27,4 @@ const styles = {
     }
 };
 
-export {styles};
+export {styles, appGray};
