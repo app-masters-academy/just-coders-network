@@ -25,9 +25,6 @@ const styles = {
     }
 };
 
-let boxWhite = styles.box;
-
-boxWhite.backgroundColor = 'white';
 
 console.log(styles.box);
 console.log({...styles.box, backgroundColor: 'white'});
