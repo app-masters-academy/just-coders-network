@@ -27,4 +27,4 @@ const styles = {
     }
 };
 
-export {styles, appGray};
+export {styles, appGray, appBlue, colors};
