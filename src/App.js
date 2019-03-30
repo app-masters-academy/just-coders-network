@@ -25,8 +25,11 @@ const styles = {
     }
 };
 
-console.log(styles.box);
-console.log({...styles.box, backgroundColor: 'white'});
+let boxWhite = styles.box;
+
+boxWhite.backgroundColor = 'white';
+
+console.log(boxWhite);
 
 class App extends Component {
     render() {
@@ -48,7 +51,7 @@ class App extends Component {
                 <div style={styles.grayBox}>
                     <p style={{color: appBlue}}>Linus Torvalds</p>
                     <p style={{color: appBlue}}>Ontém às 19:35</p>
-                    <div style={{...styles.box, backgroundColor:'white'}}>
+                    <div style={{...styles.box, backgroundColor: 'white'}}>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis massa magna, eget
                             elementum diam pharetra sed. Morbi sagittis malesuada nisl, non tristique erat viverra at.
