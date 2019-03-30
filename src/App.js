@@ -10,7 +10,9 @@ class App extends Component {
                 <div>
                     <h3>Postar agora</h3>
                     <input/>
-                    <button/>
+                    <button>
+
+                    </button>
                 </div>
                 <div>
                     <p>Linus Torvalds</p>
