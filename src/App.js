@@ -21,7 +21,7 @@ class App extends Component {
                     <button
                         style={{
                             borderWidth: 0,
-                            backgroundColor: 'silver',
+                            backgroundColor: '#4990E2',
                             color: 'white',
                             padding: 10
                         }}>
