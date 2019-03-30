@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Cabecalho from './components/Header';
+import Header from './components/Header';
 
 const appGray = '#EFEFEF';
 const appBlue = '#4990E2';
@@ -29,7 +29,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Cabecalho />
+                <Header />
                 <div style={styles.grayBox}>
                     <h3 style={{color: appBlue}}>
                         Postar agora
