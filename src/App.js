@@ -11,6 +11,7 @@ class App extends Component {
                 <div style={{
                     marginTop: 15,
                     padding: 20,
+                    backgroundColor: 'light-gray',
                     border: '1px solid gray'
                 }}>
                     <h3>Postar agora</h3>
