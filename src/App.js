@@ -39,6 +39,7 @@ class App extends Component {
                 </div>
                 <div style={styles.grayBox}>
                     <p style={{color: appBlue}}>Linus Torvalds</p>
+                    <p style={{color: appBlue}}>Ontém às 19:35</p>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis massa magna, eget
                         elementum diam pharetra sed. Morbi sagittis malesuada nisl, non tristique erat viverra at. Proin
