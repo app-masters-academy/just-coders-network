@@ -10,7 +10,7 @@ class App extends Component {
                 <Header />
                 <PostForm />
                 <Post
-                    content=""/>
+                    content="Primeiro post nessa rede social muito legal"/>
                 <Post />
                 <Post />
             </div>
