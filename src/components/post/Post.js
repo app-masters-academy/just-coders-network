@@ -11,9 +11,6 @@ const Post = (props) => {
                 name={props.user_name}
                 time={props.created_at}
             />
-            <p style={{color: colors.appBlue}}>{props.user_name}</p>
-
-            <p style={{color: colors.appBlue}}>{props.created_at}</p>
             <div style={{...styles.box, backgroundColor: 'white'}}>
                 <p>{props.content}</p>
             </div>
