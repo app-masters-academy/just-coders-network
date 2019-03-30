@@ -5,7 +5,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <div className="Header" style={{color: 'green'}}>
+                <div className="Header">
                     <h1>Just coders Network</h1>
                 </div>
                 <div style={{textAlign: 'center'}}>
