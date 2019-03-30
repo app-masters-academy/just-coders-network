@@ -12,7 +12,12 @@ class App extends Component {
           <input />
           <button />
         </div>
-        
+        <div>
+          <p>Linus Torvalds</p>
+          <p>
+            
+          </p>
+        </div>
       </div>
     );
   }
