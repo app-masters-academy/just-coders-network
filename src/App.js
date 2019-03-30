@@ -36,7 +36,7 @@ class App extends Component {
                         Enviar
                     </button>
                 </div>
-                <div style={}>
+                <div style={styles.grayBox}>
                     <p>Linus Torvalds</p>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis massa magna, eget
