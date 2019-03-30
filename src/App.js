@@ -21,7 +21,8 @@ class App extends Component {
                     <button
                         style={{
                             borderWidth: 0,
-                            color: 'silver'
+                            backgroundColor: 'silver',
+                            color: 'white'
                         }}>
                         Enviar
                     </button>
