@@ -82,8 +82,9 @@ class App extends Component {
                                 blandit. Proin tincidunt mauris odio, vel blandit mauris finibus sit amet.</p>
                         </div>
                     </div>
-                    <input/>
-                    <button>
+                    <input style={{width: '100%'}}/>
+                    <button
+                        style={styles.blueButton}>
                         Comentar
                     </button>
                 </div>
