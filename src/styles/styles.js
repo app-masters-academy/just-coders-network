@@ -22,4 +22,9 @@ const styles = {
     }
 };
 
-export {styles};
+const colors = {
+    appGray,
+    appBlue
+}
+
+export {styles, colors};
