@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Header from './components/header/';
+import PostForm from'./components/post/PostForm';
 import {styles, colors} from './styles/styles';
 
 class App extends Component {
