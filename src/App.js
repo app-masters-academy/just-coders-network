@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Header from './components/header/';
-import {styles} from './styles/styles';
+import {styles, colors} from './styles/styles';
 
 class App extends Component {
     render() {
