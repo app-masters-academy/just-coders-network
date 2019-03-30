@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import {colors} from "../../styles/styles";
+import {colors} from '../../styles/styles'
 
 class Avatar extends Component {
-    render(){
+    render() {
         return (
             <div>
-            <img style={avatarStyles} src={this.props.image} />
+                <img style={avatarStyles} src={this.props.image}/>
                 <p style={{color: colors.appBlue}}>{this.props.name}</p>
                 <p style={{color: colors.appBlue}}>{this.props.time}</p>
             </div>
