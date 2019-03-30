@@ -7,6 +7,6 @@ const Header = () => {
             <h1>Just coders Network</h1>
         </div>
     );
-}
+};
 
 export default Header;

@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './App.css';
 
 const appGray = '#EFEFEF';
 const appBlue = '#4990E2';
