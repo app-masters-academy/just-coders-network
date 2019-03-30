@@ -21,7 +21,7 @@ const avatarStyles = {
         height: 40,
         borderRadius: 20,
         objectFit: 'cover',
-        marginRight: 20,
+        marginRight: 20
     },
     container: {
         display: 'flex'
