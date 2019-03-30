@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {colors} from '../../styles/styles'
+import {colors} from '../../styles/styles';
 
 class Avatar extends Component {
     render() {
