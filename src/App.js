@@ -33,13 +33,7 @@ class App extends Component {
                     </h3>
                     <input style={{width: '100%'}}/>
                     <button
-                        style={{
-                            marginTop: 10,
-                            borderWidth: 0,
-                            backgroundColor: appBlue,
-                            color: 'white',
-                            padding: 10
-                        }}>
+                        style={styles.grayBox}>
                         Enviar
                     </button>
                 </div>
