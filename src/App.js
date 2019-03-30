@@ -25,12 +25,11 @@ const styles = {
     }
 };
 
-
 class App extends Component {
     render() {
         return (
             <div>
-
+                <Header />
                 <div style={styles.grayBox}>
                     <h3 style={{color: appBlue}}>
                         Postar agora
