@@ -18,7 +18,11 @@ class App extends Component {
                         Postar agora
                     </h3>
                     <input style={{width: '100%'}}/>
-                    <button>
+                    <button
+                        style={{
+                            borderWidth: 0,
+                            color: 'silver'
+                        }}>
                         Enviar
                     </button>
                 </div>
