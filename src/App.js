@@ -9,7 +9,8 @@ class App extends Component {
             <div>
                 <Header />
                 <PostForm />
-                <Post />
+                <Post
+                    content=""/>
                 <Post />
                 <Post />
             </div>
