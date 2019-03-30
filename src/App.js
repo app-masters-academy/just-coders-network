@@ -31,6 +31,7 @@ boxWhite.backgroundColor = 'white';
 
 console.log(styles.box);
 console.log({...styles.box, backgroundColor: 'white'});
+console.log(styles.box);
 
 class App extends Component {
     render() {
