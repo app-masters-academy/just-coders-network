@@ -9,7 +9,8 @@ class App extends Component {
         </div>
         <div>
           <h3>Postar agora</h3>
-          
+          <input />
+          <button />
         </div>
       </div>
     );
