@@ -38,7 +38,7 @@ class App extends Component {
                     </button>
                 </div>
                 <div style={styles.grayBox}>
-                    <p>Linus Torvalds</p>
+                    <p style={{color: appBlue}}>Linus Torvalds</p>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis massa magna, eget
                         elementum diam pharetra sed. Morbi sagittis malesuada nisl, non tristique erat viverra at. Proin
