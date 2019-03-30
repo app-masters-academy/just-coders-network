@@ -4,7 +4,7 @@ import {styles, colors} from '../../styles/styles';
 const Post = (props) => {
     return (
         <div style={styles.grayBox}>
-            <p style={{color: colors.appBlue}}>Linus Torvalds</p>
+            <p style={{color: colors.appBlue}}>{props.user_name}</p>
             <p style={{color: colors.appBlue}}>Ontém às 19:35</p>
             <div style={{...styles.box, backgroundColor: 'white'}}>
                 <p>
