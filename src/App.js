@@ -19,9 +19,13 @@ class App extends Component {
           </p>
           <div>
             <p>Karla</p>
-            <p></p>
+            <p>Nulla facilisi. Curabitur tincidunt odio eu facilisis convallis. Maecenas commodo et dolor ac blandit. Proin tincidunt mauris odio, vel blandit mauris finibus sit amet.</p>
           </div>
 
+            <div>
+                <p>Karla</p>
+                <p>Nulla facilisi. Curabitur tincidunt odio eu facilisis convallis. Maecenas commodo et dolor ac blandit. Proin tincidunt mauris odio, vel blandit mauris finibus sit amet.</p>
+            </div>
         </div>
       </div>
     );
