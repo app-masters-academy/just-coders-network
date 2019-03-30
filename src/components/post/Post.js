@@ -1,5 +1,5 @@
 import React from 'react';
-import {styles, colors} from '../../styles/styles'
+import {styles, colors} from '../../styles/styles';
 
 const Post = () => {
     return (
