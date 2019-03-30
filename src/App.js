@@ -39,7 +39,9 @@ class App extends Component {
                             blandit. Proin tincidunt mauris odio, vel blandit mauris finibus sit amet.</p>
                     </div>
                     <input/>
-                    <button/>
+                    <button>
+                        Comentar
+                    </button>
                 </div>
             </div>
         );
