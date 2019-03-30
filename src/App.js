@@ -9,8 +9,8 @@ class App extends Component {
                 <Header />
 
                 <div style={styles.grayBox}>
-                    <p style={{color: appBlue}}>Linus Torvalds</p>
-                    <p style={{color: appBlue}}>Ontém às 19:35</p>
+                    <p style={{color: colors.appBlue}}>Linus Torvalds</p>
+                    <p style={{color: colors.appBlue}}>Ontém às 19:35</p>
                     <div style={{...styles.box, backgroundColor: 'white'}}>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis massa magna, eget
