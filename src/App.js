@@ -23,7 +23,7 @@ class App extends Component {
                             borderWidth: 0,
                             backgroundColor: 'silver',
                             color: 'white',
-                            padding: 15
+                            padding: 10
                         }}>
                         Enviar
                     </button>
