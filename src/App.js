@@ -11,6 +11,7 @@ class App extends Component {
                 <PostForm />
                 <Post />
                 <Post />
+                <Post />
             </div>
         );
     }
