@@ -5,7 +5,7 @@ const Post = (props) => {
     return (
         <div style={styles.grayBox}>
             <p style={{color: colors.appBlue}}>{props.user_name}</p>
-            <p style={{color: colors.appBlue}}>{props.time}</p>
+            <p style={{color: colors.appBlue}}>{props.created_at}</p>
             <div style={{...styles.box, backgroundColor: 'white'}}>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis massa magna, eget
