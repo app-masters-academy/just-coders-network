@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 
 const appGray = '#D8D8D8';
+const appBlue = '#4990E2';
 
 class App extends Component {
     render() {
@@ -16,14 +17,14 @@ class App extends Component {
                     backgroundColor: appGray,
                     border: '1px solid gray'
                 }}>
-                    <h3 style={{color: '#4990E2'}}>
+                    <h3 style={{color: appBlue}}>
                         Postar agora
                     </h3>
                     <input style={{width: '100%'}}/>
                     <button
                         style={{
                             borderWidth: 0,
-                            backgroundColor: '#4990E2',
+                            backgroundColor: appBlue,
                             color: 'white',
                             padding: 10
                         }}>
