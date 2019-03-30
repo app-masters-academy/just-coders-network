@@ -27,9 +27,6 @@ const styles = {
 
 console.log(styles.box);
 console.log({...styles.box, backgroundColor: 'white'});
-const a = [1,2,3,4];
-console.log(a);
-console.log(...a);
 
 class App extends Component {
     render() {
