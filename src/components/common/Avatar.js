@@ -11,7 +11,8 @@ class Avatar extends Component {
 const avatarStyles = {
     width: 40,
     height: 40,
-    borderRadius: 20
+    borderRadius: 20,
+    objectFit: 'cover'
 }
 
 export default Avatar;
