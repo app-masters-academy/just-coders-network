@@ -30,16 +30,7 @@ class App extends Component {
         return (
             <div>
                 <Header />
-                <div style={styles.grayBox}>
-                    <h3 style={{color: appBlue}}>
-                        Postar agora
-                    </h3>
-                    <input style={{width: '100%'}}/>
-                    <button
-                        style={styles.blueButton}>
-                        Enviar
-                    </button>
-                </div>
+
                 <div style={styles.grayBox}>
                     <p style={{color: appBlue}}>Linus Torvalds</p>
                     <p style={{color: appBlue}}>Ontém às 19:35</p>
