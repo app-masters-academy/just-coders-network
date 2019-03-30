@@ -76,8 +76,11 @@ class App extends Component {
                     </div>
                     <div>
                         <p>Jonny</p>
-                        <p>Nulla facilisi. Curabitur tincidunt odio eu facilisis convallis. Maecenas commodo et dolor ac
-                            blandit. Proin tincidunt mauris odio, vel blandit mauris finibus sit amet.</p>
+                        <div style={{...styles.box, backgroundColor: 'white', padding: 5}}>
+                            <p>Nulla facilisi. Curabitur tincidunt odio eu facilisis convallis. Maecenas commodo et
+                                dolor ac
+                                blandit. Proin tincidunt mauris odio, vel blandit mauris finibus sit amet.</p>
+                        </div>
                     </div>
                     <input/>
                     <button>
