@@ -17,7 +17,7 @@ class App extends Component {
                     <h3 style={{color: 'blue'}}>
                         Postar agora
                     </h3>
-                    <input style={{display: 'flex'}}/>
+                    <input style={{width: '100%'}}/>
                     <button>
                         Enviar
                     </button>
