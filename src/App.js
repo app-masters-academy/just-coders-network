@@ -12,9 +12,7 @@ const styles = {
         border: '1px solid gray'
     },
     box: {
-        marginTop: 15,
-        padding: 20,
-        border: '1px solid gray'
+
     },
     blueButton: {
         marginTop: 10,
