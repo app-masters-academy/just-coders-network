@@ -1,6 +1,11 @@
 const appGray = '#EFEFEF';
 const appBlue = '#4990E2';
 
+const colors = {
+    appGray,
+    appBlue
+}
+
 const styles = {
     grayBox: {
         marginTop: 15,
@@ -22,9 +27,6 @@ const styles = {
     }
 };
 
-const colors = {
-    appGray,
-    appBlue
-}
+
 
 export {styles, colors};
