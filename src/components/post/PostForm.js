@@ -1,5 +1,5 @@
 import React from 'react';
-import {styles} from '../../styles/styles'
+import {styles, appBlue} from '../../styles/styles'
 
 const PostForm = () => {
     return (
