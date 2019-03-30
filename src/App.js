@@ -25,6 +25,8 @@ const styles = {
     }
 };
 
+console.log(styles.box);
+
 class App extends Component {
     render() {
         return (
