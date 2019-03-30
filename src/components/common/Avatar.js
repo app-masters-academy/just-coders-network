@@ -19,7 +19,10 @@ const avatarStyles = {
         height: 40,
         borderRadius: 20,
         objectFit: 'cover'
-    }    
+    },
+    container: {
+        display: 'flex'
+    }
 }
 
 export default Avatar;
