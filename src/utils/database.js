@@ -16,7 +16,12 @@ let fixedPost = [
 
 const getPosts = () => {
     return new Promise((resolve,reject) => {
-        const postArray = localStorage.getItem('posts');
+        let postArray = localStorage.getItem('posts');
+        if(postArray){
+            postArray = JSON.parse(postArray);
+        } else {
+            postArray = [];
+        }
         if(postArray){
             setTimeout(()=> resolve(postArray), 2000);
         } else {
