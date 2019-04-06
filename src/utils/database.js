@@ -31,6 +31,8 @@ const createPost = (post) => {
     let postArray = localStorage.getItem('posts');
     if(postArray){
         postArray = JSON.parse(postArray);
+    } else {
+        postArray = [];
     }
     // Editar meu array de posts -> inserir o post novo
     // Salvar novamente meu array de posts
