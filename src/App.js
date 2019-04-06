@@ -23,11 +23,12 @@ class App extends Component {
 
     addPostOnList(post){
         // Salvei no banco de dados
-        const savedPost = createPost(post);
-        // Salvei no state
-        const posts = this.state.posts || [];
-        posts.unshift(savedPost);
-        this.setState({posts: posts});
+        createPost(post).then(savedPost => {
+            // Salvei no state
+            const posts = this.state.posts || [];
+            posts.unshift(savedPost);
+            this.setState({posts: posts});
+        });
     }
 
     // {condicao ? se true : se false}
