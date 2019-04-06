@@ -16,6 +16,7 @@ let postArray = [
 
 const getPosts = () => {
     return new Promise((resolve,reject) => {
+        const postArray = localStorage.getItem('posts');
         if(postArray){
             setTimeout(()=> resolve(postArray), 2000);
         } else {
