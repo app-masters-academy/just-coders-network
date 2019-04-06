@@ -8,6 +8,7 @@ class Post extends Component {
         this.state={
             numLikes: 0
         }
+        this.addLike = this.addLike.bind(this);
     }
 
     addLike () {
@@ -51,7 +52,7 @@ class Post extends Component {
                     Comentar
                 </button>
                 <button
-                    onClick={this.addLike.bind(this)}
+                    onClick={this.addLike}
                     style={{...styles.blueButton, marginLeft: 20}}>
                     {'Likes ' + this.state.numLikes}
                 </button>
