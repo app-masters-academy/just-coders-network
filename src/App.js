@@ -27,10 +27,10 @@ class App extends Component {
                 {this.state.posts.map((post) => {
                     return(
                         <Post
-                            user_name={}
-                            user_image={}
-                            created_at={}
-                            content={}
+                            user_name={post.user_name}
+                            user_image={post.user_image}
+                            created_at={post.created_at}
+                            content={post.content}
                         />
                     )
                 })}
