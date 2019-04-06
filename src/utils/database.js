@@ -36,6 +36,8 @@ const createPost = (post) => {
         postArray = [];
     }
     // Editar meu array de posts -> inserir o post novo
+    post.id = new Date().getTime();
+    post.created_at = 'Agora';
     postArray.unshift(post);
     // Salvar novamente meu array de posts
     localStorage.setItem('posts', JSON.stringify(postArray));
