@@ -4,6 +4,17 @@ import PostForm from './components/post/PostForm';
 import Post from './components/post/Post';
 
 class App extends Component {
+    constructor(){
+        super();
+        this.state={
+            posts: []
+        }
+    }
+
+    componentDidMount(){
+        console.log('App mountou!');
+    }
+
     render() {
         return (
             <div style={{padding: 20}}>
