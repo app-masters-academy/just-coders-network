@@ -23,7 +23,6 @@ class PostForm extends Component {
             content: this.state.content
         }
         this.props.onSendButton(post);
-        console.log(post);
     }
 
     render(){
