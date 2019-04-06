@@ -21,6 +21,11 @@ class App extends Component {
         });
     }
 
+    addPostOnList(post){
+        const posts = this.state.posts;
+        posts.push(post);
+    }
+
     // {condicao ? se true : se false}
 
     render() {
