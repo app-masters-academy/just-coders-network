@@ -48,7 +48,7 @@ class Post extends Component {
                         console.log('Clicou no botão');
                     }}
                     style={{...styles.blueButton, marginLeft: 20}}>
-                    {'Likes '}
+                    {'Likes ' + this.state.numLikes}
                 </button>
             </div>
         )
