@@ -3,6 +3,7 @@ import {styles, appBlue} from '../../styles/styles'
 
 class PostForm extends Component {
     render(){
+        console.log('Render do PostForm');
         return (
             <div style={styles.grayBox}>
                 <h3 style={{color: appBlue}}>
