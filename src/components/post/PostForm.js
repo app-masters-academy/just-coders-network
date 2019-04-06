@@ -2,6 +2,13 @@ import React, {Component} from 'react';
 import {styles, appBlue} from '../../styles/styles'
 
 class PostForm extends Component {
+    constructor(){
+        super();
+        this.state={
+            
+        }
+    }
+
     render(){
         console.log('Render do PostForm');
         return (
