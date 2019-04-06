@@ -39,8 +39,7 @@ class App extends Component {
                                 content={post.content}
                             />
                         )
-                    })
-                }
+                    })                }
             </div>
         );
     }
