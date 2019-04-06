@@ -24,6 +24,7 @@ class App extends Component {
     addPostOnList(post){
         const posts = this.state.posts;
         posts.push(post);
+        this.setState({posts: posts});
     }
 
     // {condicao ? se true : se false}
