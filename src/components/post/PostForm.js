@@ -5,7 +5,7 @@ class PostForm extends Component {
     constructor(){
         super();
         this.state={
-            
+            content: ''
         }
     }
 
@@ -16,7 +16,9 @@ class PostForm extends Component {
                 <h3 style={{color: appBlue}}>
                     Postar agora
                 </h3>
-                <input style={{width: '100%'}}/>
+                <input
+                    style={{width: '100%'}}
+                    value={this.state.content}/>
                 <button
                     style={styles.blueButton}>
                     Enviar
