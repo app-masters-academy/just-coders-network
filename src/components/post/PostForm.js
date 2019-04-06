@@ -21,7 +21,7 @@ class PostForm extends Component {
                     Postar agora
                 </h3>
                 <input
-                    onChange={}
+                    onChange={this.onContentChange.bind(this)}
                     style={{width: '100%'}}
                     value={this.state.content}/>
                 <button
