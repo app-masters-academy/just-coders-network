@@ -2,11 +2,12 @@ import React, {Component} from 'react';
 import Header from './components/header/';
 import PostForm from './components/post/PostForm';
 import Post from './components/post/Post';
+import {getPosts} from './utils/database';
 
 class App extends Component {
-    constructor(){
+    constructor() {
         super();
-        this.state={
+        this.state = {
             posts: []
         }
     }
