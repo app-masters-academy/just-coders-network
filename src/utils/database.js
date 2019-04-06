@@ -1,4 +1,4 @@
-let postArray = [
+let fixedPost = [
     {
         id: 1,
         user_name: 'Baraky',
