@@ -15,7 +15,7 @@ class PostForm extends Component {
     }
 
     render(){
-        console.log('Render do PostForm');
+        console.log('Render do PostForm', this.state);
         return (
             <div style={styles.grayBox}>
                 <h3 style={{color: appBlue}}>
