@@ -37,6 +37,7 @@ const createPost = (post) => {
     // Editar meu array de posts -> inserir o post novo
     postArray.unshift(post);
     // Salvar novamente meu array de posts
+    localStorage.setItem('posts', JSON.stringify(postArray));
 };
 
 export {getPosts};
