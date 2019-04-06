@@ -9,6 +9,10 @@ class PostForm extends Component {
         }
     }
 
+    onContentChange(event){
+
+    }
+
     render(){
         console.log('Render do PostForm');
         return (
@@ -17,6 +21,7 @@ class PostForm extends Component {
                     Postar agora
                 </h3>
                 <input
+                    onChange={}
                     style={{width: '100%'}}
                     value={this.state.content}/>
                 <button
