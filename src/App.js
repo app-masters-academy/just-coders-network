@@ -21,6 +21,8 @@ class App extends Component {
         });
     }
 
+    // {condicao ? se true : se false}
+
     render() {
         console.log('State do App: ', this.state);
         return (
