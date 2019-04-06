@@ -45,7 +45,7 @@ class Post extends Component {
                     Comentar
                 </button>
                 <button
-                    onClick={function(){
+                    onClick={() => {
                         console.log('Clicou no botão');
                         this.setState({numLikes: this.state.numLikes + 1}, () => console.log(this.state));
 
