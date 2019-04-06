@@ -4,7 +4,8 @@ import {styles, colors} from '../../styles/styles';
 
 class Post extends Component {
     render(){
-        const props = this.props;
+        const {props} = this;
+        
         return (
             <div style={styles.grayBox}>
                 <Avatar
