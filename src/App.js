@@ -14,8 +14,10 @@ class App extends Component {
 
     componentDidMount() {
         console.log('App mountou!');
-        // const posts = getPosts();
-        // this.setState({posts: posts});
+
+        getPosts().then(posts => {
+            this.setState({posts: posts})
+        });
     }
 
     render() {
