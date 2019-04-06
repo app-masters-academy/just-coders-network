@@ -15,7 +15,7 @@ let postArray = [
 ];
 
 const getPosts = () => {
-    return Promise((resolve,reject) => {
+    return new Promise((resolve,reject) => {
         resolve(postArray);
     });
 };
