@@ -28,7 +28,7 @@ class App extends Component {
                 <Header/>
                 <PostForm/>
                 {!this.state.posts
-                    ? <img src={loadingImage}>
+                    ? <img src={loadingImage} />
                     : this.state.posts.map((post) => {
                         return(
                             <Post
