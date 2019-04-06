@@ -15,7 +15,9 @@ let postArray = [
 ];
 
 const getPosts = () => {
-    return postArray;
+    return Promise((resolve,reject) => {
+        setTimeout(() => resolve(postArray), 2000);
+    });
 };
 
 export {getPosts};
