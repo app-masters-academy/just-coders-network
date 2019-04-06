@@ -11,8 +11,9 @@ class App extends Component {
         }
     }
 
-    componentDidMount(){
+    componentDidMount() {
         console.log('App mountou!');
+
     }
 
     render() {
