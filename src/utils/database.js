@@ -35,6 +35,7 @@ const createPost = (post) => {
         postArray = [];
     }
     // Editar meu array de posts -> inserir o post novo
+    postArray.unshift(post);
     // Salvar novamente meu array de posts
 };
 
