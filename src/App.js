@@ -8,7 +8,7 @@ class App extends Component {
     constructor() {
         super();
         this.state = {
-            posts: []
+            posts: null
         }
     }
 
@@ -26,17 +26,20 @@ class App extends Component {
             <div style={{padding: 20}}>
                 <Header/>
                 <PostForm/>
-                {this.state.posts.map((post) => {
-                    return(
-                        <Post
-                            key={post.id}
-                            user_name={post.user_name}
-                            user_image={post.user_image}
-                            created_at={post.created_at}
-                            content={post.content}
-                        />
-                    )
-                })}
+                {!this.state.posts
+                    ? <div> Carregando... </div>
+                    : this.state.posts.map((post) => {
+                        return(
+                            <Post
+                                key={post.id}
+                                user_name={post.user_name}
+                                user_image={post.user_image}
+                                created_at={post.created_at}
+                                content={post.content}
+                            />
+                        )
+                    })
+                }
             </div>
         );
     }
