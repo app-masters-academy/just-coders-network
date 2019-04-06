@@ -8,10 +8,9 @@ class Post extends Component {
         this.state={
             numLikes: 0
         }
-        this.addLike = this.addLike.bind(this);
     }
 
-    addLike () {
+    addLike = () => {
         let {numLikes} = this.state;
         numLikes++;
         this.setState({numLikes});
