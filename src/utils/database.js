@@ -17,7 +17,7 @@ let postArray = [
 const getPosts = () => {
     return new Promise((resolve,reject) => {
         if(postArray){
-            setTimeout(()=> resolve(postArray), 3000);
+            setTimeout(()=> resolve(postArray), 5000);
         } else {
             reject('Nenhum post salvo');
         }
