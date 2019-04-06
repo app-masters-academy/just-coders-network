@@ -3,9 +3,11 @@ import Avatar from '../common/Avatar';
 import {styles, colors} from '../../styles/styles';
 
 class Post extends Component {
-
-    state={
-        numLikes: 0
+    constructor(){
+        super();
+        this.state={
+            numLikes: 0
+        }
     }
 
     addLike = () => {
