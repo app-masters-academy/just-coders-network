@@ -16,10 +16,8 @@ class PostForm extends Component {
 
     addPost(){
         const post = {
-            id: new Date().getTime(),
             user_name: 'Baraky',
             user_image: 'https://thenypost.files.wordpress.com/2018/05/180516-woman-mauled-by-angry-wiener-dogs-feature.jpg?quality=90&strip=all&w=618&h=410&crop=1',
-            created_at: 'Agora',
             content: this.state.content
         }
         this.props.onSendButton(post);
