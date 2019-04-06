@@ -26,4 +26,11 @@ const getPosts = () => {
     });
 };
 
+const createPost = (post) => {
+    // Pegar meu array de posts
+    const postArray = localStorage.getItem('posts');
+    // Editar meu array de posts -> inserir o post novo
+    // Salvar novamente meu array de posts
+};
+
 export {getPosts};
