@@ -16,7 +16,7 @@ class App extends Component {
         console.log('App mountou!');
 
         getPosts().then(posts => {
-            this.setState({posts: posts})
+            this.setState({posts: posts});
         });
     }
 
