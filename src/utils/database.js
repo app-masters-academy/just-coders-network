@@ -44,4 +44,4 @@ const createPost = (post) => {
     return post;
 };
 
-export {getPosts};
+export {getPosts, createPost};

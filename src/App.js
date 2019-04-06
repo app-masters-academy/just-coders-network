@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Header from './components/header/';
 import PostForm from './components/post/PostForm';
 import Post from './components/post/Post';
-import {getPosts} from './utils/database';
+import {getPosts, createPost} from './utils/database';
 import loadingImage from './assets/Ellipsis-2.1s-200px.gif'
 
 class App extends Component {
@@ -22,8 +22,11 @@ class App extends Component {
     }
 
     addPostOnList(post){
+        // Salvei no banco de dados
+        const savedPost = createPost(post);
+        // Salvei no state
         const posts = this.state.posts;
-        posts.unshift(post);
+        posts.unshift(savedPost);
         this.setState({posts: posts});
     }
 
