@@ -51,7 +51,7 @@ class Post extends Component {
                     Comentar
                 </button>
                 <button
-                    onClick={this.addLike()}
+                    onClick={this.addLike}
                     style={{...styles.blueButton, marginLeft: 20}}>
                     {'Likes ' + this.state.numLikes}
                 </button>
