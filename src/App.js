@@ -27,6 +27,7 @@ class App extends Component {
                 {this.state.posts.map((post) => {
                     return(
                         <Post
+                            key={post.id}
                             user_name={post.user_name}
                             user_image={post.user_image}
                             created_at={post.created_at}
