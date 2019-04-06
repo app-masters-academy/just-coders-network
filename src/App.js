@@ -25,7 +25,7 @@ class App extends Component {
         // Salvei no banco de dados
         const savedPost = createPost(post);
         // Salvei no state
-        const posts = this.state.posts || [];
+        const posts = this.state.posts || false;
         posts.unshift(savedPost);
         this.setState({posts: posts});
     }
