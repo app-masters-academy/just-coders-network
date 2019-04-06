@@ -14,6 +14,10 @@ class PostForm extends Component {
         this.setState({content: value});
     }
 
+    addPost(){
+
+    }
+
     render(){
         console.log('Render do PostForm', this.state);
         return (
@@ -26,6 +30,7 @@ class PostForm extends Component {
                     style={{width: '100%'}}
                     value={this.state.content}/>
                 <button
+                    onClick={this.addPost.bind(this)}
                     style={styles.blueButton}>
                     Enviar
                 </button>
