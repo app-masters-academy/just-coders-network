@@ -19,10 +19,6 @@ const getPosts = () => {
         let postArray = localStorage.getItem('posts');
         if(postArray){
             postArray = JSON.parse(postArray);
-        } else {
-            postArray = [];
-        }
-        if(postArray){
             setTimeout(()=> resolve(postArray), 2000);
         } else {
             reject('Nenhum post salvo');
