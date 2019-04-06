@@ -25,7 +25,11 @@ class App extends Component {
                 <Header/>
                 <PostForm/>
                 {this.state.posts.map((post) => {
-                    console.log(post);
+                    return(
+                        <Post
+                            
+                        />
+                    )
                 })}
                 <Post
                     user_name="Baraky"
