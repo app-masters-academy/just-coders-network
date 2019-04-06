@@ -22,6 +22,7 @@ class PostForm extends Component {
             created_at: 'Agora',
             content: this.state.content
         }
+        this.props.onSendButton(post);
         console.log(post);
     }
 

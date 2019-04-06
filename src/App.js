@@ -34,7 +34,7 @@ class App extends Component {
         return (
             <div style={{padding: 20}}>
                 <Header/>
-                <PostForm/>
+                <PostForm onSendButton={this.addPostOnList.bind(this)}/>
                 {!this.state.posts
                     ? <img src={loadingImage} />
                     : this.state.posts.map((post) => {
