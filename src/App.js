@@ -18,7 +18,7 @@ class App extends Component {
     }
 
     render() {
-        console.log('state do App: ', this.state);
+        console.log('State do App: ', this.state);
         return (
             <div style={{padding: 20}}>
                 <Header/>
