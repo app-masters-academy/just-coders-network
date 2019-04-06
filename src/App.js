@@ -3,6 +3,7 @@ import Header from './components/header/';
 import PostForm from './components/post/PostForm';
 import Post from './components/post/Post';
 import {getPosts} from './utils/database';
+import loadingImage from './assets/Ellipsis-2.1s-200px.gif'
 
 class App extends Component {
     constructor() {
@@ -27,7 +28,7 @@ class App extends Component {
                 <Header/>
                 <PostForm/>
                 {!this.state.posts
-                    ? <div> Carregando... </div>
+                    ? <img src={loadingImage}>
                     : this.state.posts.map((post) => {
                         return(
                             <Post
