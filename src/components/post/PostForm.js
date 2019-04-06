@@ -10,7 +10,8 @@ class PostForm extends Component {
     }
 
     onContentChange(event){
-
+        const value = event.target.value;
+        this.setState({content: value});
     }
 
     render(){
