@@ -39,6 +39,7 @@ const createPost = (post) => {
     postArray.unshift(post);
     // Salvar novamente meu array de posts
     localStorage.setItem('posts', JSON.stringify(postArray));
+    return post;
 };
 
 export {getPosts};
