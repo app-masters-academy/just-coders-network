@@ -23,7 +23,7 @@ class App extends Component {
 
     addPostOnList(post){
         const posts = this.state.posts;
-        posts.push(post);
+        posts.unshift(post);
         this.setState({posts: posts});
     }
 
