@@ -15,7 +15,7 @@ let postArray = [
 ];
 
 const getPosts = () => {
-
+    return postArray;
 };
 
 export {getPosts};
