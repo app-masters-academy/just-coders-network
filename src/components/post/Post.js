@@ -11,6 +11,7 @@ class Post extends Component {
     }
 
     render(){
+        console.log('Render do component Post: ', this.state);
         const {props} = this;
         return (
             <div style={styles.grayBox}>
