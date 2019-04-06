@@ -16,7 +16,12 @@ let postArray = [
 
 const getPosts = () => {
     return new Promise((resolve,reject) => {
-        resolve(postArray);
+        if(postArray){
+            resolve(postArray);
+        } else {
+            reject('Nenhum post salvo');
+        }
+
     });
 };
 
