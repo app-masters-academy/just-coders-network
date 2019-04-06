@@ -46,6 +46,7 @@ class Post extends Component {
                 <button
                     onClick={() => {
                         console.log('Clicou no botão');
+                        this.state.numLikes = this.state.numLikes + 1;
                     }}
                     style={{...styles.blueButton, marginLeft: 20}}>
                     {'Likes ' + this.state.numLikes}
