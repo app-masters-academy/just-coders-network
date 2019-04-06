@@ -24,6 +24,9 @@ class App extends Component {
             <div style={{padding: 20}}>
                 <Header/>
                 <PostForm/>
+                {this.state.posts.map((post) => {
+                    console.log(post);
+                })}
                 <Post
                     user_name="Baraky"
                     user_image="https://thenypost.files.wordpress.com/2018/05/180516-woman-mauled-by-angry-wiener-dogs-feature.jpg?quality=90&strip=all&w=618&h=410&crop=1"
