@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Avatar from '../common/Avatar';
 import {styles, colors} from '../../styles/styles';
+import {addLike} from '../../utils/database';
 
 class Post extends Component {
     constructor(){
@@ -11,6 +12,9 @@ class Post extends Component {
     }
 
     addLike = () => {
+        addLike(this.props.post).then(response => {
+
+        })
         let {numLikes} = this.state;
         numLikes++;
         this.setState({numLikes});
