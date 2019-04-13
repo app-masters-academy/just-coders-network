@@ -8,6 +8,7 @@ class SignUp extends Component {
         try {
            const data = await firebaseAuth.signInWithPopup(githubProvider);
            const auth = await signUp(data);
+           console.log(auth);
         } catch(error) {
             console.error(error);
         }
