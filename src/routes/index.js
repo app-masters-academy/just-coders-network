@@ -5,7 +5,7 @@ class Routes extends Component {
     render(){
         return(
             <div>
-
+                <Route />
             </div>
         )
     }
