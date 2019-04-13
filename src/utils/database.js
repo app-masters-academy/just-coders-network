@@ -48,4 +48,4 @@ const signUp = (data) => {
     return axios.post(baseUrl + '/auth/loginsocial', body);
 }
 
-export {getPosts, createPost, signUp};
+export {getPosts, createPost, signUp, addLike};
