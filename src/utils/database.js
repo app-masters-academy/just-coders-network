@@ -23,12 +23,12 @@ const createPost = (post) => {
         data: post,
         url: baseUrl + '/post'
     };
-    return axios(options);
+    return axios(options).then(response => response.data.data);
 };
 
 
 
-const signUp = async (data) => {
+const signUp = (data) => {
     const profile = data.additionalUserInfo.profile;
     const body = {
         email: profile.email || data.user.email,
@@ -37,16 +37,7 @@ const signUp = async (data) => {
         id: profile.id.toString(),
         photo: profile.avatar_url || data.user.photoURL
     };
-    try {
-        const response = await axios.post(baseUrl + '/auth/loginsocial', body);
-        console.log(response);
-        const data = response.data.data;
-        console.log(data);
-        return data;
-    } catch(error){
-        throw error;
-    }
-
+    return axios.post(baseUrl + '/auth/loginsocial', body);
 }
 
 export {getPosts, createPost, signUp};
