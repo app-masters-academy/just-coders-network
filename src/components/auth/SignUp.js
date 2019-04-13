@@ -5,7 +5,7 @@ import {firebaseAuth, githubProvider} from '../../utils/firebase';
 class SignUp extends Component {
     loginWithGithub() {
         firebaseAuth.signInWithPopup(githubProvider).then(data => {
-            axios.post('')
+           console.log(data);
         }).catch(error => {
             console.error(error);
         })
