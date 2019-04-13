@@ -7,8 +7,9 @@ import SignUp from '../components/auth/SignUp';
 class Routes extends Component {
     constructor(){
         super();
+        const auth = localStorage.getItem('auth');
         this.state = {
-            auth: localStorage.getItem('auth')
+            auth: auth ? JSON.parse(auth) : null
         };
         this.setAuth = this.setAuth.bind(this);
     }
