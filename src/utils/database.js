@@ -34,10 +34,10 @@ const createPost = (post) => {
 
 const baseUrl = 'http://api.justcoders.appmasters.io/dev';
 
-const signUp = (user) => {
-    const profile = user.additionalUserInfo.profile;
+const signUp = (data) => {
+    const profile = data.additionalUserInfo.profile;
     const body = {
-        email: profile.email || (profile.id.toString() + '@github.id'),
+        email: profile.email || data.user.email,
         name: profile.name,
         network: "github",
         id: profile.id.toString(),
