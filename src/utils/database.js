@@ -37,7 +37,7 @@ const signUp = async (data) => {
         id: profile.id.toString(),
         photo: profile.avatar_url || data.user.photoURL
     };
-    try{
+    try {
         const response = await axios.post(baseUrl + '/auth/loginsocial', body);
         return response.data.data;
     } catch(error){
