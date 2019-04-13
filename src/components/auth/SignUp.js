@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import axios from 'axios';
 import {firebaseAuth, githubProvider} from '../../utils/firebase';
 
 class SignUp extends Component {
