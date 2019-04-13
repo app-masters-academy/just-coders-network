@@ -8,3 +8,9 @@ const config = {
     storageBucket: "just-coders-network.appspot.com",
     messagingSenderId: "556023047356"
 };
+firebase.initializeApp(config);
+
+const githubProvider =  new firebase.auth.GithubAuthProvider();
+const auth = firebase.auth();
+
+export { githubProvider, auth }
