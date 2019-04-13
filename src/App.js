@@ -23,9 +23,7 @@ class App extends Component {
 
     addPostOnList(post) {
         // Salvei no banco de dados
-        createPost(post).then(response => {
-            console.log(response);
-            const savedPost = response.data.data;
+        createPost(post).then(savedPost => {
             // Salvei no state
             const posts = this.state.posts || [];
             posts.unshift(savedPost);
