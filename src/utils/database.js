@@ -16,7 +16,7 @@ const getPosts = () => {
 };
 
 const createPost = (post) => {
-    const auth = localStorage.getItem('auth');
+    const auth = JSON.parse(localStorage.getItem('auth'));
     const options = {
         method: 'POST',
         headers: { 'token': auth.token },
