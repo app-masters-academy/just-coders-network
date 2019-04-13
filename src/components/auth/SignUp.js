@@ -3,7 +3,7 @@ import {firebaseAuth, githubProvider} from '../../utils/firebase';
 
 class SignUp extends Component {
     loginWithGithub() {
-        firebaseAuth.signUpWithPopup()
+        firebaseAuth.signInWithPopup(githubProvider)
     }
 
     render() {
