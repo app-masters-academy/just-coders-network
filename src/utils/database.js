@@ -24,7 +24,14 @@ const createPost = (post) => {
 };
 
 const addLike = (post) => {
-    
+    const auth = JSON.parse(localStorage.getItem('auth'));
+    const options = {
+        method: 'POST',
+        headers: { 'token': auth.token },
+        data: {},
+        url: baseUrl + '/post'
+    };
+    return axios(options).then(response => response.data.data);
 }
 
 
