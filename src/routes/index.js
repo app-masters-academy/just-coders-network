@@ -9,7 +9,7 @@ class Routes extends Component {
         super();
         this.state = {
             auth: localStorage.getItem('auth')
-        }
+        };
         this.setAuth = this.setAuth.bind(this);
     }
 
@@ -25,8 +25,9 @@ class Routes extends Component {
                         ? <Route path='*' component={App}/>
                         : <Route
                             path='*'
-                            component={()=> <SignUp onSignUp={this.setAuth}/>}
-                        /> }
+                            component={()=>
+                                <SignUp onSignUp={this.setAuth}/>
+                            } /> }
                 </Switch>
             </Router>
         )
