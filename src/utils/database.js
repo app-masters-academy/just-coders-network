@@ -26,7 +26,7 @@ const createPost = (post) => {
     axios(options).then(data => {
         console.log(data);
     })
-
+    return null;
 };
 
 
