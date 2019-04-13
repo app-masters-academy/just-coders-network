@@ -6,6 +6,7 @@ import SignUp from '../components/auth/SignUp';
 
 class Routes extends Component {
     constructor(){
+        super();
         this.state = {
             auth: localStorage.getItem('auth')
         }
