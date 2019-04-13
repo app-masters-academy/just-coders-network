@@ -15,7 +15,7 @@ class PostForm extends Component {
     }
 
     addPost(){
-        const auth = localStorage.getItem('auth');
+        const auth = JSON.parse(localStorage.getItem('auth'));
         const user = auth.user;
         const post = {
             user_name: user.name,
