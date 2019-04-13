@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {colors} from '../../styles/styles';
+import moment from 'moment';
 
 class Avatar extends Component {
     render() {
@@ -8,7 +9,7 @@ class Avatar extends Component {
                 <img style={avatarStyles.image} src={this.props.image}/>
                 <div>
                     <p style={{color: colors.appBlue, margin: 0}}>{this.props.name}</p>
-                    <small style={{color: colors.appBlue}}>{this.props.time}</small>
+                    <small style={{color: colors.appBlue}}>{moment(this.props.time).fromNow()}</small>
                 </div>
             </div>
         )
