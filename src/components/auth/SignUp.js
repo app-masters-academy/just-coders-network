@@ -4,12 +4,12 @@ import {firebaseAuth, githubProvider} from '../../utils/firebase';
 import {signUp} from '../../utils/database';
 
 class SignUp extends Component {
-    loginWithGithub() {
-        firebaseAuth.signInWithPopup(githubProvider).then(data => {
-            signUp(data);
-        }).catch(error => {
+    async loginWithGithub() {
+        try {
+           const data = await irebaseAuth.signInWithPopup(githubProvider)
+        } catch(error) {
             console.error(error);
-        })
+        }
     }
 
     render() {
