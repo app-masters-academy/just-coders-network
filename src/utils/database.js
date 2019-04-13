@@ -16,7 +16,7 @@ const getPosts = () => {
 };
 
 const createPost = (post) => {
-    const auth = localStorage.getItem()
+    const auth = localStorage.getItem('')
     const options = {
         method: 'POST',
         headers: { 'token': 'application/x-www-form-urlencoded' },
