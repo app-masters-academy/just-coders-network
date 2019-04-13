@@ -18,7 +18,6 @@ class Post extends Component {
             numLikes++;
             this.setState({numLikes});
         })
-
     }
 
     render() {
