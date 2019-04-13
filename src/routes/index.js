@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Router } from 'react-router';
+import { Route, Router, history } from 'react-router';
 import App from '../App';
 import SignUp from '../components/auth/SignUp';
 
