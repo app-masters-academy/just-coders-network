@@ -41,7 +41,7 @@ const signUp = (data) => {
         name: profile.name || data.user.displayName,
         network: "github",
         id: profile.id.toString(),
-        photo: profile.avatar_url
+        photo: profile.avatar_url || data.user.photoURL
     };
     console.log(body);
     return axios.post(baseUrl + '/auth/loginsocial', body);
