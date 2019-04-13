@@ -23,7 +23,7 @@ const createPost = (post) => {
         data: post,
         url: baseUrl + '/post'
     };
-    return axios(options)
+    return axios(options);
 };
 
 
