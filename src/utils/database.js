@@ -16,6 +16,14 @@ const getPosts = () => {
 };
 
 const createPost = (post) => {
+    const auth = localStorage.getItem()
+    const options = {
+        method: 'POST',
+        headers: { 'token': 'application/x-www-form-urlencoded' },
+        data: post,
+        url: baseUrl + '/post'
+    };
+
     return axios.post(baseUrl + '/post', post);
 };
 
