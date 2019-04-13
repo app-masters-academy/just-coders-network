@@ -16,7 +16,7 @@ const getPosts = () => {
 };
 
 const createPost = (post) => {
-    return axios.post(baseUrl + '')
+    return axios.post(baseUrl + '/post', post);
 };
 
 
