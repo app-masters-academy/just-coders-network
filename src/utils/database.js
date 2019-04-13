@@ -32,7 +32,7 @@ const createPost = (post) => {
     })
 };
 
-const baseUrl = 'http://asda'
+const baseUrl = 'http://api.justcoders.appmasters.io/api/dev/'
 
 const signUp = (user) => {
     axios.post('', user)
