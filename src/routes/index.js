@@ -8,7 +8,7 @@ class Routes extends Component {
     render(){
         return(
             <Router history={createBrowserHistory()}>
-                <Route path='/timeline' component={App}/>
+                <Route path='*' component={App}/>
                 <Route path='/entrar' component={SignUp}/>
             </Router>
         )
