@@ -36,7 +36,11 @@ const baseUrl = 'http://api.justcoders.appmasters.io/api/dev';
 
 const signUp = (user) => {
     const body = {
-        em
+        email: "james@appmaster.io",
+        name: "James Oliveira",
+        network: "github",
+        id: "484848",
+        photo: "http://www.tiagogouvea.com/eu.jpg"
     };
     axios.post(baseUrl + '/auth/loginsocial', body)
 }
