@@ -13,7 +13,7 @@ class SignUp extends Component {
     render() {
         return (
             <div>
-                <button>Entrar com Github</button>
+                <button onClick={()=>this.loginWithGithub()}>Entrar com Github</button>
             </div>
         );
     }
