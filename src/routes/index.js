@@ -10,6 +10,11 @@ class Routes extends Component {
         this.state = {
             auth: localStorage.getItem('auth')
         }
+        this.setAuth = this.setAuth.bind(this);
+    }
+
+    setAuth(auth){
+        this.setState({auth});
     }
 
     render() {
@@ -18,7 +23,7 @@ class Routes extends Component {
                 <Switch>
                     {this.state.auth
                         ? <Route path='*' component={App}/>
-                        : <Route path='*' component={()=> <SignUp />}/> }
+                        : <Route path='*' component={()=> <SignUp onSignUp={this.setAuth}/>}/> }
                 </Switch>
             </Router>
         )
