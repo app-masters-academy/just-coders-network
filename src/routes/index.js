@@ -27,7 +27,8 @@ class Routes extends Component {
                             path='*'
                             component={()=>
                                 <SignUp onSignUp={this.setAuth}/>
-                            } /> }
+                            } />
+                    }
                 </Switch>
             </Router>
         )
