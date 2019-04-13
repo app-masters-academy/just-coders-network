@@ -7,7 +7,7 @@ class SignUp extends Component {
         try {
            const data = await firebaseAuth.signInWithPopup(githubProvider);
            const response = await signUp(data);
-           localStorage.setItem('auth', response.data);
+           localStorage.setItem('auth', JSON.stringify(response.data));
            this.props.onSignUp(response.data);
         } catch(error) {
             console.error(error);
