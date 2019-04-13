@@ -43,7 +43,7 @@ const signUp = (user) => {
         id: profile.id,
         photo: profile.avatar_url
     };
-    axios.post(baseUrl + '/auth/loginsocial', body)
+    return axios.post(baseUrl + '/auth/loginsocial', body)
 }
 
-export {getPosts, createPost};
+export {getPosts, createPost, signUp};
