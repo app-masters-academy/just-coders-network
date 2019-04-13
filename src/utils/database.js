@@ -23,6 +23,9 @@ const createPost = (post) => {
     return axios(options).then(response => response.data.data);
 };
 
+const addLike = (post) => {
+    
+}
 
 
 const signUp = (data) => {
