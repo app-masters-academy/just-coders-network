@@ -7,7 +7,7 @@ class Post extends Component {
     constructor() {
         super();
         this.state = {
-            numLikes: 0
+            numLikes: this.props.post.likes
         }
     }
 
