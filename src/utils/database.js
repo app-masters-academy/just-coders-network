@@ -40,8 +40,8 @@ const signUp = (user) => {
         email: profile.email,
         name: profile.name,
         network: "github",
-        id: "484848",
-        photo: "http://www.tiagogouvea.com/eu.jpg"
+        id: profile.id,
+        photo: profile.
     };
     axios.post(baseUrl + '/auth/loginsocial', body)
 }
