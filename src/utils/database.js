@@ -32,7 +32,7 @@ const createPost = (post) => {
     })
 };
 
-const baseUrl = 'http://api.justcoders.appmasters.io/api/dev';
+const baseUrl = 'http://api.justcoders.appmasters.io/dev';
 
 const signUp = (user) => {
     const profile = user.additionalUserInfo.profile;
