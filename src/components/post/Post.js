@@ -14,9 +14,7 @@ class Post extends Component {
     addLike = () => {
         addLike(this.props.post).then(response => {
             console.log(response);
-            let {numLikes} = this.state;
-            numLikes++;
-            this.setState({numLikes});
+            this.setState({numLikes: response.likes});
         })
     }
 
