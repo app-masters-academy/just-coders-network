@@ -11,8 +11,8 @@ class Routes extends Component {
             <Router history={createBrowserHistory()}>
                 <Switch>
                     {auth
-                        ? <Route path='*' component={SignUp}/>
-                        : <Route path='*' component={App}/> }
+                        ? <Route path='*' component={App}/>
+                        : <Route path='*' component={SignUp}/> }
                 </Switch>
             </Router>
         )
