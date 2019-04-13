@@ -32,8 +32,10 @@ const createPost = (post) => {
     })
 };
 
+const baseUrl = 'http://asda'
+
 const signUp = (user) => {
-    axios.post('')
+    axios.post('', user)
 }
 
 export {getPosts, createPost};
