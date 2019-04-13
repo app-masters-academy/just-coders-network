@@ -25,7 +25,7 @@ class App extends Component {
         // Salvei no banco de dados
         createPost(post).then(response => {
             console.log(response);
-            const savedPost = response.data;
+            const savedPost = response.data.data;
             // Salvei no state
             const posts = this.state.posts || [];
             posts.unshift(savedPost);
