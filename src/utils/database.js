@@ -7,7 +7,7 @@ const getPosts = () => {
     const options = {
         method: 'GET',
         headers: { 'token': auth.token },
-        url: baseUrl + '/post'
+        url: baseUrl + '/timeline'
     };
     return axios(options).then(response => response.data.data);
 };
