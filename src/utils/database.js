@@ -35,7 +35,10 @@ const createPost = (post) => {
 const baseUrl = 'http://api.justcoders.appmasters.io/api/dev';
 
 const signUp = (user) => {
-    axios.post('', user)
+    const body = {
+        em
+    };
+    axios.post(baseUrl + '/auth/loginsocial', body)
 }
 
 export {getPosts, createPost};
