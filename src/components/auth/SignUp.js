@@ -5,8 +5,11 @@ import {signUp} from '../../utils/database';
 class SignUp extends Component {
     async loginWithGithub() {
         try {
+
            const data = await firebaseAuth.signInWithPopup(githubProvider);
+
            const response = await signUp(data);
+
            localStorage.setItem('auth', JSON.stringify(response.data));
            this.props.onSignUp(response.data);
         } catch(error) {
