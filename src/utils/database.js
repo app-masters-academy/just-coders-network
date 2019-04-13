@@ -28,7 +28,7 @@ const createPost = (post) => {
 
 
 
-const signUp = (data) => {
+const signUp = async (data) => {
     const profile = data.additionalUserInfo.profile;
     const body = {
         email: profile.email || data.user.email,
@@ -37,7 +37,13 @@ const signUp = (data) => {
         id: profile.id.toString(),
         photo: profile.avatar_url || data.user.photoURL
     };
-    return axios.post(baseUrl + '/auth/loginsocial', body).then(response => response.data.data);
+    try{
+        const response = await axios.post(baseUrl + '/auth/loginsocial', body);
+        return response.data.data;
+    } catch(error){
+        throw error;
+    }
+
 }
 
 export {getPosts, createPost, signUp};
