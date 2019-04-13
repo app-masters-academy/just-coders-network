@@ -3,6 +3,11 @@ import {colors} from '../../styles/styles';
 import moment from 'moment';
 
 class Avatar extends Component {
+    constructor(){
+        super();
+        moment.locale('pt-br');
+    }
+
     render() {
         return (
             <div style={avatarStyles.container}>
