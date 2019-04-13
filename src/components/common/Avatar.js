@@ -6,6 +6,7 @@ import ptbr from 'moment/locale/pt-br'
 class Avatar extends Component {
     constructor(){
         super();
+        moment.locale('pt-BR');
     }
 
     render() {
