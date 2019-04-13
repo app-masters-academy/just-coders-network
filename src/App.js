@@ -21,7 +21,7 @@ class App extends Component {
         });
     }
 
-    addPostOnList(post){
+    addPostOnList(post) {
         // Salvei no banco de dados
         createPost(post).then(savedPost => {
             // Salvei no state
@@ -40,9 +40,9 @@ class App extends Component {
                 <Header/>
                 <PostForm onSendButton={this.addPostOnList.bind(this)}/>
                 {!this.state.posts
-                    ? <img src={loadingImage} />
+                    ? <img src={loadingImage}/>
                     : this.state.posts.map((post) => {
-                        return(
+                        return (
                             <Post
                                 key={post.id}
                                 user_name={post.user_name}
@@ -51,7 +51,7 @@ class App extends Component {
                                 content={post.content}
                             />
                         )
-                    })                }
+                    })}
             </div>
         );
     }
