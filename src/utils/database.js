@@ -29,7 +29,8 @@ const addLike = (post) => {
         method: 'POST',
         headers: { 'token': auth.token },
         data: {},
-        url: `baseUrl + '/post/' + post.id + '/like'
+        url: `${baseUrl}/post/${post.id}/like`
+        // url: baseUrl + '/post/' + post.id + '/like'
     };
     return axios(options).then(response => response.data.data);
 }
