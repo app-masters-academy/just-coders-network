@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import {firebaseAuth, githubProvider} from '../../utils/firebase';
 
 class SignUp extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <div>
                 <button>Entrar com Github</button>
             </div>
