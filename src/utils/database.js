@@ -39,7 +39,9 @@ const signUp = async (data) => {
     };
     try {
         const response = await axios.post(baseUrl + '/auth/loginsocial', body);
-        return response.data.data;
+        console.log(response);
+        const data = response.data.data
+        return data;
     } catch(error){
         throw error;
     }
