@@ -15,6 +15,8 @@ class PostForm extends Component {
     }
 
     addPost(){
+        const auth = localStorage.getItem('auth');
+        const user = auth.user;
         const post = {
             user_name: 'Baraky',
             user_image: 'https://thenypost.files.wordpress.com/2018/05/180516-woman-mauled-by-angry-wiener-dogs-feature.jpg?quality=90&strip=all&w=618&h=410&crop=1',
