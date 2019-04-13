@@ -22,12 +22,12 @@ class Post extends Component {
         return (
             <div style={styles.grayBox}>
                 <Avatar
-                    image={props.user_image}
-                    name={props.user_name}
-                    time={props.created_at}
+                    image={props.post.user.thumb_url}
+                    name={props.post.user.name}
+                    time={props.post.created_at}
                 />
                 <div style={{...styles.box, backgroundColor: 'white'}}>
-                    <p>{props.content}</p>
+                    <p>{props.post.content}</p>
                 </div>
                 {/*<div>*/}
                 {/*<p style={{color: colors.appBlue}}>Karla</p>*/}

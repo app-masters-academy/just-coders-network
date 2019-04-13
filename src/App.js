@@ -47,6 +47,7 @@ class App extends Component {
                         return (
                             <Post
                                 key={post.id}
+                                post={post}
                                 user_name={post.user.name}
                                 user_image={post.user.thumb_url}
                                 created_at={post.created_at}
