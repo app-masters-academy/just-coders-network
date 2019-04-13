@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {colors} from '../../styles/styles';
 import moment from 'moment';
-import 'moment/locale/pt-br'
+import 'moment/locale/pt-br';
 
 class Avatar extends Component {
     constructor(){
