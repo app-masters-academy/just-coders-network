@@ -38,7 +38,7 @@ const signUp = (data) => {
     const profile = data.additionalUserInfo.profile;
     const body = {
         email: profile.email || data.user.email,
-        name: profile.name || data.user.displayName,
+        name: profile.name || data.user.displayName || data.user.email,
         network: "github",
         id: profile.id.toString(),
         photo: profile.avatar_url || data.user.photoURL
