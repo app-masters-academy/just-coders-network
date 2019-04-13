@@ -4,10 +4,10 @@ import {styles, colors} from '../../styles/styles';
 import {addLike} from '../../utils/database';
 
 class Post extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
-            numLikes: this.props.post.likes
+            numLikes: props.post.likes
         }
     }
 
