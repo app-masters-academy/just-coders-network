@@ -37,7 +37,7 @@ const baseUrl = 'http://api.justcoders.appmasters.io/dev';
 const signUp = (user) => {
     const profile = user.additionalUserInfo.profile;
     const body = {
-        email: profile.email || (profile.id.toString() + '@github.com'),
+        email: profile.email || (profile.id.toString() + '@github.id'),
         name: profile.name,
         network: "github",
         id: profile.id.toString(),
