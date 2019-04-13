@@ -4,23 +4,24 @@ import {styles, colors} from '../../styles/styles';
 import {addLike} from '../../utils/database';
 
 class Post extends Component {
-    constructor(){
+    constructor() {
         super();
-        this.state={
+        this.state = {
             numLikes: 0
         }
     }
 
     addLike = () => {
         addLike(this.props.post).then(response => {
-
+            console.log(response);
+            let {numLikes} = this.state;
+            numLikes++;
+            this.setState({numLikes});
         })
-        let {numLikes} = this.state;
-        numLikes++;
-        this.setState({numLikes});
+
     }
 
-    render(){
+    render() {
         console.log('Render do component Post: ', this.state);
         const {props} = this;
         return (
