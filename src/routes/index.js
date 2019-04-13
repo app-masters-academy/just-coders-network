@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { Route, Router, history } from 'react-router';
+import { Route, Router } from 'react-router';
+import { createBrowserHistory } from 'history';
 import App from '../App';
 import SignUp from '../components/auth/SignUp';
 
 class Routes extends Component {
     render(){
         return(
-            <Router>
+            <Router history={createBrowserHistory()}>
                 <Route path='/timeline' component={App}/>
                 <Route path='/entrar' component={SignUp}/>
             </Router>
