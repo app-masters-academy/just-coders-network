@@ -3,16 +3,13 @@ import axios from 'axios';
 const baseUrl = 'http://api.justcoders.appmasters.io/dev';
 
 const getPosts = () => {
-    return new Promise((resolve, reject) => {
-        let postArray = localStorage.getItem('posts');
-        if (postArray) {
-            postArray = JSON.parse(postArray);
-            setTimeout(() => resolve(postArray), 2000);
-        } else {
-            reject('Nenhum post salvo');
-        }
-
-    });
+    const auth = JSON.parse(localStorage.getItem('auth'));
+    const options = {
+        method: 'GET',
+        headers: { 'token': auth.token },
+        url: baseUrl + '/post'
+    };
+    return axios(options).then(response => response.data.data);
 };
 
 const createPost = (post) => {
