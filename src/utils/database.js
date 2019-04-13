@@ -24,7 +24,7 @@ const createPost = (post) => {
         url: baseUrl + '/post'
     };
 
-    return axios.post(baseUrl + '/post', post);
+    return axios(options);
 };
 
 
