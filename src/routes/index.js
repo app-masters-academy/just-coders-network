@@ -12,10 +12,7 @@ class Routes extends Component {
                 <Switch>
                     {auth
                         ? <Route path='*' component={SignUp}/>
-                        : <Route path='*' component={App}/>
-                    }
-
-
+                        : <Route path='*' component={App}/> }
                 </Switch>
             </Router>
         )
