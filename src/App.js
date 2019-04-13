@@ -30,6 +30,8 @@ class App extends Component {
             const posts = this.state.posts || [];
             posts.unshift(savedPost);
             this.setState({posts: posts});
+        }).catch(error => {
+            console.error(error);
         });
     }
 
