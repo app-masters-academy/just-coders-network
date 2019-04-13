@@ -37,8 +37,7 @@ const signUp = (data) => {
         id: profile.id.toString(),
         photo: profile.avatar_url || data.user.photoURL
     };
-    console.log(body);
-    return axios.post(baseUrl + '/auth/loginsocial', body);
+    return axios.post(baseUrl + '/auth/loginsocial', body).then(response => response.data.data);
 }
 
 export {getPosts, createPost, signUp};
