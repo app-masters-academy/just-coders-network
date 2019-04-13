@@ -16,10 +16,10 @@ const getPosts = () => {
 };
 
 const createPost = (post) => {
-    const auth = localStorage.getItem('')
+    const auth = localStorage.getItem('auth');
     const options = {
         method: 'POST',
-        headers: { 'token': 'application/x-www-form-urlencoded' },
+        headers: { 'token': auth.token },
         data: post,
         url: baseUrl + '/post'
     };
