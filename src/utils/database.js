@@ -35,7 +35,7 @@ const createPost = (post) => {
 const baseUrl = 'http://api.justcoders.appmasters.io/api/dev';
 
 const signUp = (user) => {
-    const profile = user.adicionalUserInfo.profile;
+    const profile = user.additionalUserInfo.profile;
     const body = {
         email: profile.email,
         name: profile.name,
