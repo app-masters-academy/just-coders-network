@@ -35,13 +35,13 @@ const createPost = (post) => {
 const baseUrl = 'http://api.justcoders.appmasters.io/api/dev';
 
 const signUp = (user) => {
-    const {profile} = user.adicionalUserInfo;
+    const profile = user.adicionalUserInfo.profile;
     const body = {
         email: profile.email,
         name: profile.name,
         network: "github",
         id: profile.id,
-        photo: profile.image_url
+        photo: profile.avatar_url
     };
     axios.post(baseUrl + '/auth/loginsocial', body)
 }
