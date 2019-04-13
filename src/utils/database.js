@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+const baseUrl = 'http://api.justcoders.appmasters.io/dev';
+
 const getPosts = () => {
     return new Promise((resolve, reject) => {
         let postArray = localStorage.getItem('posts');
@@ -14,10 +16,10 @@ const getPosts = () => {
 };
 
 const createPost = (post) => {
-
+    return axios.post(baseUrl + '')
 };
 
-const baseUrl = 'http://api.justcoders.appmasters.io/dev';
+
 
 const signUp = (data) => {
     const profile = data.additionalUserInfo.profile;
