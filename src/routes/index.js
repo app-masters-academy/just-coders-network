@@ -5,12 +5,17 @@ import App from '../App';
 import SignUp from '../components/auth/SignUp';
 
 class Routes extends Component {
+    constructor(){
+        this.state = {
+            auth: localStorage.getItem('auth')
+        }
+    }
+
     render() {
-        const auth = localStorage.getItem('auth');
         return (
             <Router history={createBrowserHistory()}>
                 <Switch>
-                    {auth
+                    {this.state.auth
                         ? <Route path='*' component={App}/>
                         : <Route path='*' component={SignUp}/> }
                 </Switch>
