@@ -18,7 +18,7 @@ class Routes extends Component {
                 <Switch>
                     {this.state.auth
                         ? <Route path='*' component={App}/>
-                        : <Route path='*' component={SignUp}/> }
+                        : <Route path='*' component={()=> <SignUp />}/> }
                 </Switch>
             </Router>
         )
