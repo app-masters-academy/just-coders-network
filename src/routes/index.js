@@ -9,8 +9,8 @@ class Routes extends Component {
         return (
             <Router history={createBrowserHistory()}>
                 <Switch>
-                    <Route path='*' component={App}/>
                     <Route path='/entrar' component={SignUp}/>
+                    <Route path='*' component={App}/>
                 </Switch>
             </Router>
         )
