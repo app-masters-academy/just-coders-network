@@ -41,7 +41,7 @@ const signUp = (user) => {
         name: profile.name,
         network: "github",
         id: profile.id,
-        photo: profile.
+        photo: profile.image_url
     };
     axios.post(baseUrl + '/auth/loginsocial', body)
 }
