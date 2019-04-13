@@ -6,11 +6,16 @@ import SignUp from '../components/auth/SignUp';
 
 class Routes extends Component {
     render() {
+        const auth = localStorage.getItem('auth');
         return (
             <Router history={createBrowserHistory()}>
                 <Switch>
-                    <Route path='/entrar' component={SignUp}/>
-                    <Route path='*' component={App}/>
+                    {auth
+                        ? <Route path='*' component={SignUp}/>
+                        : <Route path='*' component={App}/>
+                    }
+
+
                 </Switch>
             </Router>
         )
