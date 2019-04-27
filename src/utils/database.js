@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = 'https://php.appmasters.io/justcoders/dev/api/public/dev';
+const baseUrl = 'https://php.appmasters.io/justcoders/dev/api/public/prod';
 
 const getPosts = () => {
     const auth = JSON.parse(localStorage.getItem('auth'));
