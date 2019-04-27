@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {getPost} from '../../utils/database';
+import Post from './Post';
+import loadingImage from "../../assets/Ellipsis-2.1s-200px.gif";
 
 class PostView extends Component {
     constructor(){
@@ -24,9 +26,12 @@ class PostView extends Component {
     render() {
         console.log('PostView props >', this.props);
         console.log('PostView state >', this.state);
+        if(this.state.loading){
+            return <img src={loadingImage}/>
+        }
         return (
             <div>
-                <p>Aqui vai ter um post</p>
+
                 <p>Aqui vai ter alguns comentarios</p>
             </div>
         );
