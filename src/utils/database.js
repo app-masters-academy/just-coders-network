@@ -33,7 +33,8 @@ const getPost = (postId) => {
     const options = {
         method: 'GET',
         headers: { 'token': auth.token },
-        url: baseUrl + '/post/' + postId
+        // url: baseUrl + '/post/' + postId
+        url: `${baseUrl}/post/${postId}`
     }
 }
 
