@@ -3,6 +3,7 @@ import Header from "../header";
 
 class PostView extends Component {
     render() {
+        console.log(this.props);
         return (
             <div>
                 <p>Aqui vai ter um post</p>
