@@ -5,7 +5,6 @@ class PostView extends Component {
     render() {
         return (
             <div>
-                <Header />
                 <p>Aqui vai ter um post</p>
                 <p>Aqui vai ter alguns comentarios</p>
             </div>

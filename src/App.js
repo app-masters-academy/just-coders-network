@@ -39,7 +39,6 @@ class App extends Component {
         console.log('State do App: ', this.state);
         return (
             <div style={{padding: 20}}>
-                <Header/>
                 <PostForm onSendButton={this.addPostOnList.bind(this)}/>
                 {!this.state.posts
                     ? <img src={loadingImage}/>
