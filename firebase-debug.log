@@ -11,3 +11,16 @@
 [info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=388629368&redirect_uri=http%3A%2F%2Flocalhost%3A9005
 [info] 
 [info] Waiting for authentication...
+[debug] [2019-04-27T17:37:25.011Z] ----------------------------------------------------------------------
+[debug] [2019-04-27T17:37:25.014Z] Command:       /Users/Baraky/.nvm/versions/node/v9.10.0/bin/node /Users/Baraky/Projetos/just-coders-network/node_modules/.bin/firebase login
+[debug] [2019-04-27T17:37:25.014Z] CLI Version:   6.7.1
+[debug] [2019-04-27T17:37:25.014Z] Platform:      darwin
+[debug] [2019-04-27T17:37:25.014Z] Node Version:  v9.10.0
+[debug] [2019-04-27T17:37:25.015Z] Time:          Sat Apr 27 2019 14:37:25 GMT-0300 (-03)
+[debug] [2019-04-27T17:37:25.015Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=903864409&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
