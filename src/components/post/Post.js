@@ -50,7 +50,7 @@ class Post extends Component {
                 <button
                     onClick={this.props.onButtonClick}
                     style={styles.blueButton}>
-                    Comentar
+                    Comentario
                 </button>
                 <button
                     onClick={this.addLike}
