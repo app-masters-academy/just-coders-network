@@ -47,7 +47,6 @@ class Post extends Component {
                 {/*blandit. Proin tincidunt mauris odio, vel blandit mauris finibus sit amet.</p>*/}
                 {/*</div>*/}
                 {/*</div>*/}
-                <input style={{width: '100%'}}/>
                 <button
                     onClick={this.props.onButtonClick}
                     style={styles.blueButton}>
