@@ -48,6 +48,7 @@ class Post extends Component {
                 {/*</div>*/}
                 {/*</div>*/}
                 <button
+                    
                     onClick={this.props.onButtonClick}
                     style={styles.blueButton}>
                     Comentar
