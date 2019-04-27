@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Header from './components/header/';
+import {Row, Col} from 'react-flexbox-grid';
 import PostForm from './components/post/PostForm';
 import Post from './components/post/Post';
 import {getPosts, createPost} from './utils/database';
