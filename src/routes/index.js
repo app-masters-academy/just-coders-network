@@ -3,9 +3,10 @@ import {Route, Router, Switch} from 'react-router';
 import {createBrowserHistory} from 'history';
 import App from '../App';
 import SignUp from '../components/auth/SignUp';
+import PostView from "../components/post/PostView";
 
 class Routes extends Component {
-    constructor(){
+    constructor() {
         super();
         const auth = localStorage.getItem('auth');
         this.state = {
@@ -14,7 +15,7 @@ class Routes extends Component {
         this.setAuth = this.setAuth.bind(this);
     }
 
-    setAuth(auth){
+    setAuth(auth) {
         this.setState({auth});
     }
 
@@ -23,13 +24,16 @@ class Routes extends Component {
             <Router history={createBrowserHistory()}>
                 <Switch>
                     {this.state.auth
-                        ? <Route path='*' component={App}/>
+                        ? <Fragment>
+                            <Route path='post' component={PostView}/>
+                            <Route path='*' component={App}/>
+                        </Fragment>
 
                         : <Route
                             path='*'
-                            component={()=>
+                            component={() =>
                                 <SignUp onSignUp={this.setAuth}/>
-                            } />
+                            }/>
                     }
                 </Switch>
             </Router>
