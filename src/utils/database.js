@@ -1,6 +1,9 @@
 import axios from 'axios';
 const isDev = process.env.NODE_ENV !== 'production';
-const baseUrl = 'https://php.appmasters.io/justcoders/dev/api/public/prod';
+let baseUrl = 'https://php.appmasters.io/justcoders/dev/api/public/dev';
+if (!isDev){
+    baseUrl = 'https://php.appmasters.io/justcoders/dev/api/public/prod';
+}
 
 const getPosts = () => {
     const auth = JSON.parse(localStorage.getItem('auth'));
