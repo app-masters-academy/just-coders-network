@@ -28,7 +28,7 @@ class Routes extends Component {
                     {this.state.auth
                         ? <Switch>
                             <Route path='/post/:postId' component={PostView}/>
-                            <Route path='*' component={App}/>
+                            <Route exact path='/' component={App}/>
                         </Switch>
 
                         : <Route
