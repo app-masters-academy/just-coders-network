@@ -1,12 +1,12 @@
 import firebase from 'firebase';
 
 const config = {
-    apiKey: "AIzaSyD8GAQsiRE89DOBYBuBtSAJnB71yXbN2KA",
-    authDomain: "just-coders-network.firebaseapp.com",
-    databaseURL: "https://just-coders-network.firebaseio.com",
-    projectId: "just-coders-network",
-    storageBucket: "just-coders-network.appspot.com",
-    messagingSenderId: "556023047356"
+    apiKey: "AIzaSyB8GkEY2guLNAKfu3q2dzqqtH6rUPHGsuc",
+    authDomain: "jc-net.firebaseapp.com",
+    databaseURL: "https://jc-net.firebaseio.com",
+    projectId: "jc-net",
+    storageBucket: "jc-net.appspot.com",
+    messagingSenderId: "889748138750"
 };
 firebase.initializeApp(config);
 
