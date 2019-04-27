@@ -6,6 +6,7 @@ class PostView extends Component {
         return (
             <div>
                 <Header />
+                
             </div>
         );
     }
