@@ -6,7 +6,7 @@ class PostView extends Component {
         return (
             <div>
                 <Header />
-                Aqui vai ter um post
+                <p>Aqui vai ter um post</p>
                 <p>Aqui vai ter alguns comentarios</p>
             </div>
         );
