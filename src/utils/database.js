@@ -1,5 +1,5 @@
 import axios from 'axios';
-const isDev = process.env.NODE_ENV === 'production';
+const isDev = process.env.NODE_ENV !== 'production';
 const baseUrl = 'https://php.appmasters.io/justcoders/dev/api/public/prod';
 
 const getPosts = () => {
