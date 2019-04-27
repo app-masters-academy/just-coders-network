@@ -29,6 +29,7 @@ class Routes extends Component {
                         ? <Switch>
                             <Route path='/post/:postId' component={PostView}/>
                             <Route exact path='/' component={App}/>
+                            <Route path='*' component={()=> <div>404</div>}/>
                         </Switch>
 
                         : <Route
