@@ -1,6 +1,8 @@
 import axios from 'axios';
+
 const isDev = process.env.NODE_ENV !== 'production';
 let baseUrl = 'https://php.appmasters.io/justcoders/dev/api/public/dev';
+
 if (!isDev){
     baseUrl = 'https://php.appmasters.io/justcoders/dev/api/public/prod';
 }
