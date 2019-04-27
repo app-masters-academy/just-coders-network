@@ -31,7 +31,7 @@ class PostView extends Component {
         }
         return (
             <div>
-
+                <Post post={this.state.post}/>
                 <p>Aqui vai ter alguns comentarios</p>
             </div>
         );
