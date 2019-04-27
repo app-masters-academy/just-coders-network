@@ -5,7 +5,8 @@ class PostView extends Component {
     constructor(){
         super();
         this.state = {
-            post: null
+            post: null,
+            loading: false
         }
     }
 
