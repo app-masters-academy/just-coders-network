@@ -8,6 +8,11 @@ class PostView extends Component {
             post: null
         }
     }
+
+    componentDidMount(){
+        getPost()
+    }
+
     render() {
         console.log(this.props);
         return (
