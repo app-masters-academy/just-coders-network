@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {Component, Fragment} from 'react';
 import {Route, Router, Switch} from 'react-router';
 import {createBrowserHistory} from 'history';
 import App from '../App';
 import SignUp from '../components/auth/SignUp';
 import PostView from "../components/post/PostView";
 
-class Routes extends React.Component {
+class Routes extends Component {
     constructor() {
         super();
         const auth = localStorage.getItem('auth');
@@ -24,10 +24,10 @@ class Routes extends React.Component {
             <Router history={createBrowserHistory()}>
                 <Switch>
                     {this.state.auth
-                        ? <React.Fragment>
+                        ? <Fragment>
                             <Route path='post' component={PostView}/>
                             <Route path='*' component={App}/>
-                        </React.Fragment>
+                        </Fragment>
 
                         : <Route
                             path='*'
