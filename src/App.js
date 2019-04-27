@@ -42,15 +42,19 @@ class App extends Component {
                 <PostForm onSendButton={this.addPostOnList.bind(this)}/>
                 {!this.state.posts
                     ? <img src={loadingImage}/>
-                    : this.state.posts.map((post) => {
-                        return (
-                            <Post
-                                onButtonClick={() => this.props.history.push('/post/' + post.id)}
-                                key={post.id}
-                                post={post}
-                            />
-                        )
-                    })}
+                    : <Row>
+                        {this.state.posts.map((post) => {
+                            return (
+                                <Post
+                                    onButtonClick={() => this.props.history.push('/post/' + post.id)}
+                                    key={post.id}
+                                    post={post}
+                                />
+                            )
+                        })}
+                    </Row>
+                }
+
             </div>
         );
     }
