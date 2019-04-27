@@ -8,7 +8,7 @@ class PostView extends Component {
         super();
         this.state = {
             post: null,
-            loading: false,
+            loading: true,
             error: null
         }
     }
