@@ -23,7 +23,7 @@ class Routes extends Component {
     render() {
         return (
             <Router history={createBrowserHistory()}>
-                <Switch>
+                <Fragment>
                     <Route path='*' component={Header}/>
                     {this.state.auth
                         ? <Switch>
@@ -37,7 +37,7 @@ class Routes extends Component {
                                 <SignUp onSignUp={this.setAuth}/>
                             }/>
                     }
-                </Switch>
+                </Fragment>
             </Router>
         )
     }
