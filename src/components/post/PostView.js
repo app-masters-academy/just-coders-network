@@ -10,6 +10,7 @@ class PostView extends Component {
     }
 
     componentDidMount(){
+        const id = this.props.
         getPost()
     }
 
