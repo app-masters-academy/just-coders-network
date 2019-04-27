@@ -12,6 +12,7 @@ class PostView extends Component {
 
     componentDidMount(){
         const id = this.props.match.params.postId;
+        this.setState({loading: true});
         getPost(id).then(post => {
             this.setState({post: post});
         })
