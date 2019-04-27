@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import {Route, Router, Switch} from 'react-router';
 import {createBrowserHistory} from 'history';
 import App from '../App';
@@ -24,6 +24,7 @@ class Routes extends Component {
                 <Switch>
                     {this.state.auth
                         ? <Route path='*' component={App}/>
+
                         : <Route
                             path='*'
                             component={()=>
