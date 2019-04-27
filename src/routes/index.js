@@ -25,7 +25,7 @@ class Routes extends Component {
                 <Switch>
                     {this.state.auth
                         ? <Fragment>
-                            <Route path='post' component={PostView}/>
+                            <Route path='/post' component={PostView}/>
                             <Route path='*' component={App}/>
                         </Fragment>
 
