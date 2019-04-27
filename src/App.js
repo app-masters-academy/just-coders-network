@@ -45,11 +45,13 @@ class App extends Component {
                     : <Row>
                         {this.state.posts.map((post) => {
                             return (
-                                <Post
-                                    onButtonClick={() => this.props.history.push('/post/' + post.id)}
-                                    key={post.id}
-                                    post={post}
-                                />
+                                <Col>
+                                    <Post
+                                        onButtonClick={() => this.props.history.push('/post/' + post.id)}
+                                        key={post.id}
+                                        post={post}
+                                    />
+                                </Col>
                             )
                         })}
                     </Row>
