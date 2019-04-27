@@ -15,6 +15,8 @@ class PostView extends Component {
         this.setState({loading: true});
         getPost(id).then(post => {
             this.setState({post: post, loading: false});
+        }).catch(error => {
+            this.setState({error: error, loading: false});
         })
     }
 
