@@ -11,7 +11,7 @@ class PostView extends Component {
 
     componentDidMount(){
         const id = this.props.match.params.postId;
-        getPost()
+        getPost(id)
     }
 
     render() {
