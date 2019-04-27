@@ -1,6 +1,13 @@
 import React, {Component} from 'react';
+import {getPost} from '../../utils/database';
 
 class PostView extends Component {
+    constructor(){
+        super();
+        this.state = {
+            post: null
+        }
+    }
     render() {
         console.log(this.props);
         return (
