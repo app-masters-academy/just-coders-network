@@ -23,6 +23,7 @@ class PostView extends Component {
 
     render() {
         console.log(this.props);
+        console.log(this.state);
         return (
             <div>
                 <p>Aqui vai ter um post</p>
