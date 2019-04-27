@@ -4,7 +4,7 @@ class PostView extends Component {
     render(){
         return(
             <div>
-
+                Olá
             </div>
         );
     }
