@@ -36,6 +36,7 @@ const getPost = (postId) => {
         // url: baseUrl + '/post/' + postId
         url: `${baseUrl}/post/${postId}`
     }
+    return axios(options).then(response => response.data.data);
 }
 
 const addLike = (post) => {
