@@ -24,10 +24,10 @@ class Routes extends Component {
             <Router history={createBrowserHistory()}>
                 <Switch>
                     {this.state.auth
-                        ? <Fragment>
+                        ? <Switch>
                             <Route path='/post' component={PostView}/>
                             <Route path='*' component={App}/>
-                        </Fragment>
+                        </Switch>
 
                         : <Route
                             path='*'
