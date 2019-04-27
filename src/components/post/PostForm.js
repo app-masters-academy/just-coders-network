@@ -31,7 +31,7 @@ class PostForm extends Component {
                 </h3>
                 <input
                     onChange={this.onContentChange.bind(this)}
-                    style={{width: '80%'}}
+                    style={{width: '100%'}}
                     value={this.state.content}/>
                 <button
                     onClick={this.addPost.bind(this)}
