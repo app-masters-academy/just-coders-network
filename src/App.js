@@ -45,7 +45,7 @@ class App extends Component {
                     : <Row>
                         {this.state.posts.map((post) => {
                             return (
-                                <Col>
+                                <Col xs={4}>
                                     <Post
                                         onButtonClick={() => this.props.history.push('/post/' + post.id)}
                                         key={post.id}
