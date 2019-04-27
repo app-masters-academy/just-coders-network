@@ -35,9 +35,9 @@ const getPost = (postId) => {
         headers: { 'token': auth.token },
         // url: baseUrl + '/post/' + postId
         url: `${baseUrl}/post/${postId}`
-    }
+    };
     return axios(options).then(response => response.data.data);
-}
+};
 
 const addLike = (post) => {
     const auth = JSON.parse(localStorage.getItem('auth'));
@@ -64,4 +64,4 @@ const signUp = (data) => {
     return axios.post(baseUrl + '/auth/loginsocial', body);
 }
 
-export {getPosts, createPost, signUp, addLike};
+export {getPosts, createPost, signUp, addLike, getPost};
