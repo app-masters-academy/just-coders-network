@@ -49,6 +49,7 @@ class Post extends Component {
                 {/*</div>*/}
                 <input style={{width: '100%'}}/>
                 <button
+                    onClick={this.props.onButtonClick}
                     style={styles.blueButton}>
                     Comentar
                 </button>
